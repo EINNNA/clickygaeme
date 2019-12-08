@@ -3,42 +3,50 @@ import friends from "./pictures.json";
 import Wrapper from "./components/Wrapper/Wrapper";
 import PictureCard from "./components/PictureCard/PictureCard";
 
-var currentScore = [];
-var highScore = [];
-var currentFriends = [];
-
 class App extends Component {
 
-    state = {
-        friends
-    };
+  state = {
+    friends,
+    currentScore: 0,
+    highScore: 17,
+    currentFriends: []
+  };
 
-    random = () => {
-        Math.floor(Math.random() * 17);
-    };
+  random = () => {
+    Math.floor(Math.random() * 17);
+  };
+
+handleIncrement = () => {
+  this.setState({ currentScore: this.state.currentScore +10 })
+}
 
 
+  removeFriend = id => {
+    const friends = this.state.friends.filter(friend => friend.id !== id);
+    this.setState({ friends });
+  };
 
-    removeFriend = id => {
-        const friends = this.state.friends.filter(friend => friend.id !== id);
-        this.setState({ friends });
-      };
-    
-      render() {
-        return (
-          <H1>Catch the Animals</H1>
-          <H3>Score: {this.</H3>
-            {this.state.friends.map(friend => (
-              <PictureCard
-                key={friend.id}
-                removeFriend={this.removeFriend}
-                id={this.random()}
-                image={friend.image}
-              />
-            ))}
-        );
-      }
-    
+  render() {
+    return (
+      <div>
+        <h1>Catch the Animals</h1>
+        <h3>Score: {this.state.currentScore}</h3>
+        <h3>High Score: {this.state.highScore}</h3>
+        {this.state.friends.map(friend => (
+          <Wrapper>
+            <PictureCard
+              key={friend.id}
+              removeFriend={this.removeFriend}
+              id={this.random()}
+              image={friend.image}
+            />
+          </Wrapper>
+
+        ))}
+      </div>
+    );
+  }
+
 }
 
 export default App;

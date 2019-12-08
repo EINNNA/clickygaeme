@@ -1,6 +1,7 @@
 import React from "react";
 import "./PictureCard.css";
 import pictures from "../../pictures.json";
+import Catch from "./catch.gif";
 
 const PictureCard = props => {
   return (
@@ -8,7 +9,7 @@ const PictureCard = props => {
       <div className="img-container">
         <img alt={props.id} src={props.image} />
         <span onClick={() => props.removeFriend(props.id)} className="remove">
-          𝘅
+          <img src={Catch} alt="x" />
       </span>
       </div>
     </div>
