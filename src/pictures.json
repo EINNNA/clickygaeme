@@ -1,70 +1,87 @@
 [
     {
         "id": 0,
-        "image": "https://66.media.tumblr.com/168afb4dcae471c96703b98a439905bc/tumblr_inline_ne2nzbo0hA1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/168afb4dcae471c96703b98a439905bc/tumblr_inline_ne2nzbo0hA1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 1,
-        "image": "https://66.media.tumblr.com/3a3f036488b39705caf805d5b2ff13e3/tumblr_inline_ne2o1fv0Q31siyl8l.gif"
+        "image": "https://66.media.tumblr.com/3a3f036488b39705caf805d5b2ff13e3/tumblr_inline_ne2o1fv0Q31siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 2,
-        "image": "https://66.media.tumblr.com/873de09f837aabcbded3895e48d602b1/tumblr_inline_ne2o12xPgN1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/873de09f837aabcbded3895e48d602b1/tumblr_inline_ne2o12xPgN1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 3,
-        "image": "https://66.media.tumblr.com/31c36760217cbd8c305e2410af65204e/tumblr_inline_nf3yaqvm8z1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/31c36760217cbd8c305e2410af65204e/tumblr_inline_nf3yaqvm8z1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 4,
-        "image": "https://66.media.tumblr.com/30d6af498c61738d7d060135df254099/tumblr_inline_nf401635Tj1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/30d6af498c61738d7d060135df254099/tumblr_inline_nf401635Tj1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 5,
-        "image": "https://66.media.tumblr.com/25fa36d3cae633de0283867350747b56/tumblr_inline_nf40ctiBIE1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/25fa36d3cae633de0283867350747b56/tumblr_inline_nf40ctiBIE1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 6,
-        "image": "https://66.media.tumblr.com/8eb7bb528b963268eb9986e303414321/tumblr_inline_nf40dsiM2n1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/8eb7bb528b963268eb9986e303414321/tumblr_inline_nf40dsiM2n1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 7,
-        "image": "https://66.media.tumblr.com/5d40d9a6931330d522b9a2619152bb7d/tumblr_inline_nf403eTVIZ1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/5d40d9a6931330d522b9a2619152bb7d/tumblr_inline_nf403eTVIZ1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 8,
-        "image": "https://66.media.tumblr.com/cd6103203fa52b31fa6647dbbf538e5b/tumblr_inline_nf3x0ga7Le1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/cd6103203fa52b31fa6647dbbf538e5b/tumblr_inline_nf3x0ga7Le1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 9,
-        "image": "https://66.media.tumblr.com/4a5a1aa399a7646cd96bbbd35e3c4efd/tumblr_inline_nf3ywbkN2q1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/4a5a1aa399a7646cd96bbbd35e3c4efd/tumblr_inline_nf3ywbkN2q1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 10,
-        "image": "https://66.media.tumblr.com/d0e74a8de2fee236216dff72d298e229/tumblr_inline_nf3znzAsp01siyl8l.gif"
+        "image": "https://66.media.tumblr.com/d0e74a8de2fee236216dff72d298e229/tumblr_inline_nf3znzAsp01siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 11,
-        "image": "https://66.media.tumblr.com/131151e86192066e5feb34e8aeec240f/tumblr_inline_nf3x6pWysi1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/131151e86192066e5feb34e8aeec240f/tumblr_inline_nf3x6pWysi1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 12,
-        "image": "https://66.media.tumblr.com/6fae7005625c9444a8931d8cbf5eec15/tumblr_inline_nf3x72Klx61siyl8l.gif"
+        "image": "https://66.media.tumblr.com/6fae7005625c9444a8931d8cbf5eec15/tumblr_inline_nf3x72Klx61siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 13,
-        "image": "https://66.media.tumblr.com/8ba175dbfa16a6197298edcf2f95999b/tumblr_inline_nf44feytOV1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/8ba175dbfa16a6197298edcf2f95999b/tumblr_inline_nf44feytOV1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 14,
-        "image": "https://66.media.tumblr.com/7bd2d2a2c15fd1e834c4de1d850eb07c/tumblr_inline_nf45ja4RJ31siyl8l.gif"
+        "image": "https://66.media.tumblr.com/7bd2d2a2c15fd1e834c4de1d850eb07c/tumblr_inline_nf45ja4RJ31siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 15,
-        "image": "https://66.media.tumblr.com/ece798ae50725ea86ed51d88b763ad4c/tumblr_inline_nf3zpb3PwC1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/ece798ae50725ea86ed51d88b763ad4c/tumblr_inline_nf3zpb3PwC1siyl8l.gif",
+        "clicked": false
     },
     {
         "id": 16,
-        "image": "https://66.media.tumblr.com/95ddc7ef4328d7fdd9c24e51a62dd104/tumblr_inline_nf3wrg3Hin1siyl8l.gif"
+        "image": "https://66.media.tumblr.com/95ddc7ef4328d7fdd9c24e51a62dd104/tumblr_inline_nf3wrg3Hin1siyl8l.gif",
+        "clicked": false
     }
 ]
