@@ -8,48 +8,45 @@ class App extends Component {
   state = {
     friends,
     currentScore: 0,
-    highScore: 0,
-    currentFriends: [],
+    highScore: 0
   };
 
 
   clickReaction = (id) => {
-    let clicked = this.state.friends[id];
-    if(clicked.clicked){
-      this.reset();
-    }else{
-      clicked.clicked = true;
-      let temp = this.state.friends.filter(friend => friend.id !== clicked.id)
-      temp.push(clicked)
-      temp.sort(() => Math.random() - 0.5);
-      this.setState({friends: temp});
-      this.handleIncrement();
-    }
-    // if (!this.state.friends.clicked) {
-    //   this.setState({...this.state.friends, clicked: true });
-    //   this.handleIncrement();
-    // }
-    // else {
-    //   this.reset();
-    // }
-  }
+    let clickedFriend;
 
-  random = () => {
-    Math.floor(Math.random() * 17);
+    const friendsCopy = this.state.friends.map(friend => {
+      if (friend.id === id)
+        clickedFriend = friend;
+
+      return friend;
+    });
+    
+    if(clickedFriend.clicked){
+      this.reset();
+    } else {
+      clickedFriend.clicked = true;
+      friendsCopy.sort(() => Math.random() - 0.5);
+      this.setState({friends: friendsCopy});
+      this.handleIncrement();
+    };
   };
 
   reset = () => {
-    this.setState({ score: 0});
+    if (this.state.currentScore > this.state.highScore)
+      this.setState({ highScore: this.state.currentScore })
+    const friendsCopy = this.state.friends;
+
+    const resettedFriends = friendsCopy.map(friend => {
+      friend.clicked = false;
+      return friend;
+    });
+
+    this.setState({ currentScore: 0, friends: resettedFriends});
   };
 
   handleIncrement = () => {
-    this.setState({ currentScore: this.state.currentScore + 10 })
-  };
-
-  highScore = () => {
-    if (this.state.currentScore > this.state.highScore) {
-      this.setState({ highScore: this.state.currentScore })
-    }
+    this.setState({ currentScore: this.state.currentScore + 10 });
   };
 
   render() {
@@ -59,15 +56,16 @@ class App extends Component {
         <h3>Score: {this.state.currentScore}</h3>
         <h3>High Score: {this.state.highScore}</h3>
         {this.state.friends.map(friend => (
-          <Wrapper>
-            <PictureCard
-              key={friend.id}
-              id={friend.id}
-              clickReaction={this.clickReaction}
-              image={friend.image}
-            />
-          </Wrapper>
-
+          <div style={{display: "inline-block"}} key={friend.id}>
+            <Wrapper>
+              <PictureCard
+                id={friend.id}
+                clickReaction={this.clickReaction}
+                image={friend.image}
+              />
+              {friend.id}
+            </Wrapper>
+          </div>
         ))}
       </div>
     );

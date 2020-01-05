@@ -6,10 +6,10 @@ const PictureCard = props => {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={props.id} src={props.image} />
-        <span onClick={() => props.clickReaction(props.id)}>
+        <span className="net" onClick={() => props.clickReaction(props.id)}>
           <img src={Catch} alt="x" />
-      </span>
+        </span>
+        <img alt={props.id} src={props.image} />
       </div>
     </div>
   );
